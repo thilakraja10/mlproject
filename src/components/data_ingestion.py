@@ -22,7 +22,7 @@ class DataIngestion:
         try:
             df = pd.read_csv('notebook/dataset/India-Rainfall-Dataset.csv')
 
-            logging.ifo('Read the dataset as dataframe')
+            logging.info('Read the dataset as dataframe')
             os.makedirs(os.path.dirname(self.ingestion_congif.train_data_path),exist_ok=True)
             df.to_csv(self.ingestion_congif.raw_data_path,index=False,header=True)
             logging.info("Train test split initiated")
