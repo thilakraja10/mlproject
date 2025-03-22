@@ -1,5 +1,5 @@
 import sys
-from scripts.logger import logger
+from src.logger import logger
 
 class CustomException(Exception):
     def __init__(self, error_message, error_detail: sys):
